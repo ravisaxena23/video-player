@@ -1,0 +1,33 @@
+/* Hide original appearance */
+.choose-file {
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0.1px;
+    z-index: -1;
+  }
+  
+  /* Style both input field and label */
+  .choose-file + .upload-file {
+    background-color: #cf1259;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-family: Sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .choose-file:focus + .upload-file,
+  .choose-file + .upload-file:hover {
+    background-color: #E5246E;
+  }
+
+  .file-input{
+    width: 100%;
+    border: black solid 1px;
+  }

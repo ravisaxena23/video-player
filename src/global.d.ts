@@ -1,4 +1,4 @@
-/// <reference types="react-scripts" />
+// global.d.ts
 declare global {
     interface Window {
       adsbygoogle?: any;

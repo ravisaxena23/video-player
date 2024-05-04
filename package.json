@@ -13,6 +13,7 @@
     "react": "^18.3.1",
     "react-adsense": "^0.1.0",
     "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "react-redux": "^9.1.2",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",

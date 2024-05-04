@@ -4,6 +4,7 @@ import FileInput from './components/FileInput';
 import SubtitleInput from './components/SubtitleInput';
 import AdsComponent from './components/AdsComponent';
 import AmazonComponent from './components/AmazonComponent';
+import { Helmet } from 'react-helmet';
 import './App.css'
 
 const App: React.FC = () => {
@@ -81,6 +82,9 @@ const App: React.FC = () => {
 
   return (
     <div className='contain'>
+      <Helmet>
+        <meta name="google-adsense-account" content="ca-pub-6641730295781081" />
+      </Helmet>
       <div className='amazon'>
         <AmazonComponent textLink='https://www.amazon.in/events/greatsummersale?discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&linkCode=ll2&tag=ravi0847-21&linkId=685e976701e2155dae55e4d8581752e7&language=en_IN&ref_=as_li_ss_tl'
           imgLink='https://m.media-amazon.com/images/I/41MloPxj+VL._SL1000_.jpg'

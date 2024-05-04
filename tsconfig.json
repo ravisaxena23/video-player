@@ -4,7 +4,7 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext",
+      "esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,7 +18,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "suppressImplicitAnyIndexErrors": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "global.d.ts"]
+  "include": [
+    "src",
+    "global.d.ts"
+  ]
 }

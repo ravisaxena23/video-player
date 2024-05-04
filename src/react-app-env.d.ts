@@ -1,7 +1,5 @@
-/// <reference types="react-scripts" />
-declare global {
-    interface Window {
-      adsbygoogle?: any;
-    }
-  }
-  
+// <reference types="react-scripts" />
+declare const window: Window &
+   typeof globalThis & {
+    adsbygoogle: any
+   }

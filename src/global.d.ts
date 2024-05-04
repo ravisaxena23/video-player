@@ -1,7 +1,5 @@
 // global.d.ts
-declare global {
-    interface Window {
-      adsbygoogle?: any;
-    }
-  }
-  
+declare const window: Window &
+   typeof globalThis & {
+    adsbygoogle: any
+   }

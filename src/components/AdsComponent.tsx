@@ -3,16 +3,12 @@ import React, { useEffect } from 'react';
 const AdsComponent = (props: any) => {
     const { dataAdSlot, clientId } = props; // Corrected prop destructuring
 
-    // useEffect(() => {
-    //     try {
-    //         ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-    //     } catch (e) {
-    //         console.log(e);
-    //     }
-    // }, []);
+    useEffect(() => {
+        if (window['adsbygoogle'] && !window['adsbygoogle'].loaded)
+        (window['adsbygoogle'] = window['adsbygoogle'] || []).push({});
+    }, []);
 
     return (
-        <>
             <ins className="adsbygoogle"
                 style={{ display: "block" }}
                 data-ad-client={clientId} // Corrected data-ad-client attribute
@@ -20,7 +16,6 @@ const AdsComponent = (props: any) => {
                 data-ad-format="auto"
                 data-full-width-responsive="true">
             </ins>
-        </>
     );
 };
 
